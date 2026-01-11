@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courtak - Book Your Court, Own Your Game</title>
+    <meta name="description" content="Courtak is a court booking platform. Find and book padel, football, and tennis courts near you.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cpath d='M200,20 C100.6,20 20,100.6 20,200 C20,299.4 100.6,380 200,380 C258.5,380 310.7,353 344,308 L284,263 C262,294 228,315 200,315 C128,315 75,262 75,200 C75,138 128,85 200,85 C228,85 262,106 284,137 L344,92 C310.7,47 258.5,20 200,20 Z' fill='%237CB342'/%3E%3Ccircle cx='330' cy='200' r='55' fill='%23CDDC39'/%3E%3Cpath d='M295,165 Q330,200 295,235' stroke='%23C0CA33' stroke-width='6' fill='none'/%3E%3Cpath d='M365,165 Q330,200 365,235' stroke='%23C0CA33' stroke-width='6' fill='none'/%3E%3C/svg%3E">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #558B2F 0%, #7CB342 50%, #9CCC65 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 28px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            padding: 16px;
+        }
+        
+        .logo svg {
+            width: 100%;
+            height: 100%;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 48px;
+        }
+        
+        .features {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+        
+        .feature {
+            background: rgba(255,255,255,0.15);
+            padding: 20px 24px;
+            border-radius: 16px;
+            max-width: 200px;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        
+        .feature h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .feature p {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+        
+        .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        
+        .links a {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        
+        .links a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .coming-soon {
+            padding: 16px 32px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 16px;
+            display: inline-block;
+        }
+        
+        .coming-soon p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .contact {
+            margin-top: 48px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .contact a {
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature {
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Courtak Logo - C with padel ball -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <!-- C shape - Lime Green -->
+                <path d="M200,20 
+                    C100.6,20 20,100.6 20,200 
+                    C20,299.4 100.6,380 200,380 
+                    C258.5,380 310.7,353 344,308 
+                    L284,263 
+                    C262,294 228,315 200,315 
+                    C128,315 75,262 75,200 
+                    C75,138 128,85 200,85 
+                    C228,85 262,106 284,137 
+                    L344,92 
+                    C310.7,47 258.5,20 200,20 Z"
+                    fill="#7CB342"/>
+                
+                <!-- Padel Ball - Yellow base -->
+                <circle cx="330" cy="200" r="55" fill="#CDDC39"/>
+                
+                <!-- Padel Ball - Curved line 1 -->
+                <path d="M295,165 Q330,200 295,235" stroke="#C0CA33" stroke-width="6" fill="none"/>
+                
+                <!-- Padel Ball - Curved line 2 -->
+                <path d="M365,165 Q330,200 365,235" stroke="#C0CA33" stroke-width="6" fill="none"/>
+            </svg>
+        </div>
+        <h1>Courtak</h1>
+        <p class="tagline">Book Your Court, Own Your Game</p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Find Courts</h3>
+                <p>Discover padel, football, and tennis courts near you</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Easy Booking</h3>
+                <p>Check availability and book in seconds</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Instant Confirmation</h3>
+                <p>Get your booking confirmed immediately</p>
+            </div>
+        </div>
+        
+        <div class="coming-soon">
+            <p>📱 Coming soon to Google Play</p>
+        </div>
+        
+        <div class="links" style="margin-top: 32px;">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+        </div>
+        
+        <div class="contact">
+            <p>Questions? Contact us at <a href="mailto:support@courtak.com">support@courtak.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
